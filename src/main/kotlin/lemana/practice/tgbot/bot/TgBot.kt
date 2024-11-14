@@ -1,5 +1,4 @@
 package lemana.practice.tgbot.bot
-
 import com.github.kotlintelegrambot.Bot
 import com.github.kotlintelegrambot.bot
 import com.github.kotlintelegrambot.dispatch
@@ -10,9 +9,15 @@ import com.github.kotlintelegrambot.dispatcher.text
 import com.github.kotlintelegrambot.entities.*
 import com.github.kotlintelegrambot.entities.keyboard.InlineKeyboardButton
 import com.github.kotlintelegrambot.entities.keyboard.KeyboardButton
+import com.sun.security.auth.UserPrincipal
+import jakarta.annotation.PreDestroy
+import lemana.practice.tgbot.scheduler.MessageManager
 import lemana.practice.tgbot.session.UserSession
 import lemana.practice.tgbot.session.context.UserSessionContext
+
+
 import mu.KLogging
+import org.springframework.beans.factory.ObjectFactory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.stereotype.Component
@@ -20,10 +25,17 @@ import org.springframework.stereotype.Component
 @Component
 class TgBot(
     @Value("\${bot.token}") private val token: String,
-    @Value("\${bot.name}") private val botName: String
+    @Value("\${bot.name}") private val botName: String,
+    userSessionObjectFactory: ObjectFactory<UserSession>,
+    //private val messageManager: MessageManager
 ) {
 
     companion object : KLogging()
+
+    @PreDestroy
+    fun onShutdown() {
+
+    }
 
     @Bean
     fun getBot(): Bot {
@@ -58,9 +70,9 @@ class TgBot(
 
                 command("equeue") {
                     val chatId = update.message?.chat?.id ?: return@command
-                    handleUserEntriesCommand(chatId, bot)
                     val messageId = update.message!!.messageId
                     bot.deleteMessage(ChatId.fromId(chatId), messageId)
+                    handleUserEntriesCommand(chatId, bot)
                 }
 
                 text {
@@ -69,9 +81,9 @@ class TgBot(
 
                     if (messageText == "Мои записи на проектирование")
                     {
-                        handleUserEntriesCommand(chatId, bot)
                         val messageId = update.message!!.messageId
                         bot.deleteMessage(ChatId.fromId(chatId), messageId)
+                        handleUserEntriesCommand(chatId, bot)
                     }
                 }
 
@@ -258,9 +270,9 @@ class TgBot(
 
 
     private fun handleUserEntriesCommand(chatId: Long, bot: Bot) {
-        val currentUserSession = UserSessionContext.getSession(chatId)
-        if (currentUserSession != null) {
-            val keyboard = showUserEntries(currentUserSession, bot = bot, chatId = chatId)
+        val session = UserSessionContext.getSession(chatId)
+        if (session != null) {
+            val keyboard = showUserEntries(session, bot = bot, chatId = chatId)
 
             val (response, exception) = bot.sendMessage(
                 chatId = ChatId.fromId(chatId),
@@ -269,12 +281,18 @@ class TgBot(
             )
 
             response?.body()?.result?.let { message ->
-                currentUserSession.lastMessageId = message.messageId
-            } ?: run {
-                exception?.printStackTrace()
-            }
+                logger.info { "${message.text}" }
+                session.addMessageId(chatId, bot, message.messageId)}
+                session.retainLastMessageId(chatId, bot)
 
-            logger.info { "1st message needed to be deleted: ${response?.body()?.result?.messageId} : ${response?.body()?.result?.text}" }
+//            response?.body()?.result?.let { message ->
+//                session.lastMessageId = message.messageId
+//                logger.info { "${message.text}" }
+//            } ?: run {
+//                exception?.printStackTrace()
+//            }
+
+            logger.info { "needed to be deleted: ${response?.body()?.result?.messageId} : ${response?.body()?.result?.text}" }
 
         } else {
             bot.sendMessage(ChatId.fromId(chatId), "Сессия не найдена.")
@@ -285,7 +303,7 @@ class TgBot(
 
 
 
-    private fun showUserEntries( session: UserSession, page: Int = 0, chatId: Long? = null, bot: Bot? = null): InlineKeyboardMarkup {
+    private fun showUserEntries(session: UserSession, page: Int = 0, chatId: Long? = null, bot: Bot? = null): InlineKeyboardMarkup {
         val pageSize = 3
         val startIndex = page * pageSize
         var sessionList = session.temporaryFormList

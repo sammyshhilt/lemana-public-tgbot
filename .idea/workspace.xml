@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7d825596-c0bc-4e8b-ae06-0fc159de8aec" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -15,6 +16,15 @@
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/UserSession.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/context/UserSessionContext.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+=======
+    <list default="true" id="7d825596-c0bc-4e8b-ae06-0fc159de8aec" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/scheduler/MessageManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/bot/TgBot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/bot/TgBot.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/UserSession.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/UserSession.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/context/UserSessionContext.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/context/UserSessionContext.kt" afterDir="false" />
+>>>>>>> 320ecdb (init)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +34,48 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="Dockerfile" />
+>>>>>>> 320ecdb (init)
         <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
+=======
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sammyshhilt&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sammyshhilt/lemana-practice-bot.git&quot;,
+    &quot;accountId&quot;: &quot;fe9dd3d1-9e29-4759-a7c8-cdad1304dbad&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+>>>>>>> 320ecdb (init)
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -46,6 +87,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Application.executor": "Run",
@@ -75,6 +117,42 @@
     </option>
   </component>
   <component name="RunManager">
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lemana-practice-tgbot [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lemana-practice-tgbot [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LemanaBotApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/kotlin/lemana-practice-tgbot&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn clean package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LemanaBotApplication">
+>>>>>>> 320ecdb (init)
     <configuration name="Application" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="lemana.practice.tgbot.LemanaBotApplicationKt" />
       <module name="lemana-practice-tgbot" />
@@ -82,6 +160,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="LemanaBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="lemana-practice-tgbot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lemana.practice.tgbot.LemanaBotApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> 320ecdb (init)
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -100,13 +189,40 @@
       <option name="presentableId" value="Default" />
       <updated>1731341408147</updated>
       <workItem from="1731341409286" duration="3505000" />
+<<<<<<< HEAD
       <workItem from="1731345092342" duration="51484000" />
     </task>
+=======
+      <workItem from="1731345092342" duration="52472000" />
+      <workItem from="1731979563067" duration="1205000" />
+      <workItem from="1731981678377" duration="1248000" />
+      <workItem from="1732008448653" duration="794000" />
+      <workItem from="1732307368015" duration="1529000" />
+      <workItem from="1732310439221" duration="69000" />
+      <workItem from="1732310539861" duration="7928000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1731617609033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731617609033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+>>>>>>> 320ecdb (init)
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+>>>>>>> 320ecdb (init)
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lemana_practice_tgbot$LemanaBotApplication.ic" NAME="LemanaBotApplication Coverage Results" MODIFIED="1731348945220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>lemana.practice.tgbot.*</FILTER>

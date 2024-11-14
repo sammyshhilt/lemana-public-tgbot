@@ -5,6 +5,7 @@ import java.util.concurrent.ConcurrentHashMap
 object UserSessionContext {
     private val userSessions: ConcurrentHashMap<Long, UserSession> = ConcurrentHashMap()
 
+
     fun getOrCreateSession(userId: Long, nickname: String): UserSession {
         return userSessions.computeIfAbsent(userId) { UserSession(userId, nickname) }
     }
