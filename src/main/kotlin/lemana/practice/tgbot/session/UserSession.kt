@@ -1,11 +1,12 @@
 package lemana.practice.tgbot.session
 
-import lemana.practice.tgbot.bot.TgBot.Companion.logger
+
 import mu.KLogger
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component
 import com.github.kotlintelegrambot.Bot
 import com.github.kotlintelegrambot.entities.ChatId
+import mu.KLogging
 import java.util.Timer
 import java.util.TimerTask
 import java.util.concurrent.ConcurrentHashMap
@@ -17,7 +18,7 @@ class UserSession(
     val nickname: String,
     var lastMessageId: Long? = null
 ) {
-    val logger = logger()
+//    val logger = KLogging()
     var phoneNumber: String = "empty number"
     var temporaryFormList: MutableList<String> = mutableListOf(
         "form 1", "form 2", "form 3", "form 4", "form 5", "form 6", "form 7"
@@ -28,7 +29,7 @@ class UserSession(
 
     fun addMessageId(chatId: Long, bot: Bot, messageId: Long) {
         inlineButtonMessageIds.add(messageId)
-        logger.info { "$inlineButtonMessageIds" }
+        //logger.info { "$inlineButtonMessageIds" }
         scheduleRemoval(chatId, bot, messageId, 20 * 1000L) // 10 минут в миллисекундах
     }
 

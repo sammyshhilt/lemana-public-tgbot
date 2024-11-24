@@ -9,9 +9,7 @@ import com.github.kotlintelegrambot.dispatcher.text
 import com.github.kotlintelegrambot.entities.*
 import com.github.kotlintelegrambot.entities.keyboard.InlineKeyboardButton
 import com.github.kotlintelegrambot.entities.keyboard.KeyboardButton
-import com.sun.security.auth.UserPrincipal
 import jakarta.annotation.PreDestroy
-import lemana.practice.tgbot.scheduler.MessageManager
 import lemana.practice.tgbot.session.UserSession
 import lemana.practice.tgbot.session.context.UserSessionContext
 
