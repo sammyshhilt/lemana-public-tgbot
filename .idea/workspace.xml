@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d825596-c0bc-4e8b-ae06-0fc159de8aec" name="Changes" comment="Resolve merge conflicts" />
+    <list default="true" id="7d825596-c0bc-4e8b-ae06-0fc159de8aec" name="Changes" comment="Resolve merge conflicts">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/config/BeanPostProcessorConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/config/CustomBeanFactoryPostProcessor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/config/CustomBeanPostProcessor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/config/LoggerConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59f1b000-d2ba-4341-b776-865b3524a527.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59f1b000-d2ba-4341-b776-865b3524a527.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59f1b000-d2ba-4341-b776-865b3524a527/storage_v2/_src_/database/data_base.RgpP6g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59f1b000-d2ba-4341-b776-865b3524a527/storage_v2/_src_/database/data_base.RgpP6g/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemana-practice-tgbot.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemana-practice-tgbot.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/service/create/InlineMessageCreateService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/service/create/InlineMessageCreateService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/service/create/UserCreateService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/service/create/UserCreateService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/UserSession.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lemana/practice/tgbot/session/UserSession.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Dockerfile" />
         <option value="Kotlin Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -41,13 +57,16 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/sammyshhilt/lemana-practice-bot.git&quot;,
-    &quot;accountId&quot;: &quot;fe9dd3d1-9e29-4759-a7c8-cdad1304dbad&quot;
+    &quot;accountId&quot;: &quot;8c0c0fe1-00c8-4bc1-a202-34e2a32c6b8a&quot;
   }
 }</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -63,18 +82,21 @@
   &quot;keyToString&quot;: {
     &quot;Application.Application.executor&quot;: &quot;Run&quot;,
     &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.telegram-bot: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Maven.lemana-practice-tgbot [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.lemana-practice-tgbot [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lemana-practice-tgbot [clean].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.LemanaBotApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/kotlin/lemana-practice-tgbot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/kotlin/lemana-practice-tgbot/Dockerfile&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -84,12 +106,24 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="lemana.practice.tgbot.repo.message" />
+      <recent name="lemana.practice.tgbot.service.delete" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean install" />
       <command value="mvn clean package" />
+      <command value="mvn clean" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.LemanaBotApplication">
@@ -108,6 +142,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.telegram-bot: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="telegram-bot" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.telegram-bot: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -133,6 +191,24 @@
       <workItem from="1732307368015" duration="1529000" />
       <workItem from="1732310439221" duration="69000" />
       <workItem from="1732310539861" duration="7928000" />
+      <workItem from="1732441258999" duration="25447000" />
+      <workItem from="1732543268973" duration="5705000" />
+      <workItem from="1732581339329" duration="1142000" />
+      <workItem from="1732583494413" duration="18000" />
+      <workItem from="1732583820865" duration="153000" />
+      <workItem from="1732584302663" duration="150000" />
+      <workItem from="1732584501096" duration="4789000" />
+      <workItem from="1732609299261" duration="8386000" />
+      <workItem from="1732619908138" duration="21635000" />
+      <workItem from="1732795197467" duration="5605000" />
+      <workItem from="1732801628315" duration="14809000" />
+      <workItem from="1733143047489" duration="14464000" />
+      <workItem from="1733348684481" duration="5718000" />
+      <workItem from="1733692353905" duration="45000" />
+      <workItem from="1733734442844" duration="4758000" />
+      <workItem from="1733877496793" duration="4400000" />
+      <workItem from="1734596787929" duration="1122000" />
+      <workItem from="1734615805748" duration="362000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -166,7 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732440151119</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Resolve merge conflicts">
+      <option name="closed" value="true" />
+      <created>1732440585169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732440585169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Resolve merge conflicts">
+      <option name="closed" value="true" />
+      <created>1732815895989</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732815895989</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

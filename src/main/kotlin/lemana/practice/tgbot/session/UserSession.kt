@@ -1,14 +1,12 @@
 package lemana.practice.tgbot.session
 
 
-import mu.KLogger
-import org.springframework.context.annotation.Scope
-import org.springframework.stereotype.Component
 import com.github.kotlintelegrambot.Bot
 import com.github.kotlintelegrambot.entities.ChatId
-import mu.KLogging
-import java.util.Timer
-import java.util.TimerTask
+import lemana.practice.tgbot.bot.TgBot.Companion.logger
+import org.springframework.context.annotation.Scope
+import org.springframework.stereotype.Component
+import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 
 @Component
@@ -16,9 +14,9 @@ import java.util.concurrent.ConcurrentHashMap
 class UserSession(
     val userId: Long,
     val nickname: String,
-    var lastMessageId: Long? = null
+    var lastMessageId: Long? = null,
+    var lastInlineChoice: Long? = null
 ) {
-//    val logger = KLogging()
     var phoneNumber: String = "empty number"
     var temporaryFormList: MutableList<String> = mutableListOf(
         "form 1", "form 2", "form 3", "form 4", "form 5", "form 6", "form 7"
@@ -26,6 +24,14 @@ class UserSession(
 
     private val inlineButtonMessageIds = mutableListOf<Long>() // Список ID сообщений
     private val deletionTasks = ConcurrentHashMap<Long, Timer>() // Таймеры на удаление
+
+
+    fun setLastInlineChoice(chatId: Long, bot: Bot, messageId: Long){
+        // lastInlineChoice?.let { bot.deleteMessage(ChatId.fromId(chatId), it) }
+        lastInlineChoice = messageId
+        logger.info {"setLastInlineChoice: $lastInlineChoice"}
+    }
+
 
     fun addMessageId(chatId: Long, bot: Bot, messageId: Long) {
         inlineButtonMessageIds.add(messageId)

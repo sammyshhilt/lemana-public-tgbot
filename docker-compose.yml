@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres:
+    build:
+      context: ./postgres-docker
+    container_name: postgres-container
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: data_base
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Pisemnet123
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  telegram-bot:
+    build:
+      context: .
+    container_name: telegram-bot-container
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-container:5432/data_base
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: Pisemnet123
+
+volumes:
+  postgres-data:
